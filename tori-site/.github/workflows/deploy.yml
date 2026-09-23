@@ -1,0 +1,20 @@
+name: Deploy to Self-Hosted Server
+
+on:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Pull and Restart Docker Containers
+        run: |
+          cd ~/Tori-Website/tori-site
+          git pull
+          sudo docker compose down
+          sudo docker compose up -d --build
