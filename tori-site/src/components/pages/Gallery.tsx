@@ -57,7 +57,7 @@ export default function Gallery() {
         <div className="w-full animate-in fade-in duration-700">
             <div className="mb-12 text-center md:text-left">
                 <h1 className="text-4xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-5xl">
-                    Selected Works
+                    Selected Works by Tori
                 </h1>
                 <p className="mt-4 text-lg text-zinc-500 max-w-2xl">
                     A collection of recent photography and physical prints. Click any image to view details and availability.
